@@ -1,0 +1,228 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 8,
+  "templateFile": "./templates/excel/pnl_template.xlsx",
+  "rowHeader": {
+    "object": "Tổng lịch sử lãi lỗ",
+    "cellTemplates": [
+      {
+        "value": "Tổng",
+        "colIndex": 1,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "CENTER"
+          }
+        }
+      },
+      {
+        "value": "#root.totalCost",
+        "colIndex": 7,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.totalValue",
+        "colIndex": 8,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.totalRealizedPnl",
+        "colIndex": 9,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.totalPnl+'%'",
+        "colIndex": 10,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      }
+    ]
+  },
+  "rowTemplate": {
+    "object": "#root.pnlReports",
+    "cellTemplates": [
+      {
+        "value": "#root.tradingDate",
+        "colIndex": 1,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.tradingTime",
+        "colIndex": 2,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.symbol",
+        "colIndex": 3,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.closedQuantity",
+        "colIndex": 4,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.averageCost",
+        "colIndex": 5,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.closedPrice",
+        "colIndex": 6,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.cost",
+        "colIndex": 7,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.totalSellValue",
+        "colIndex": 8,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.realizedPnl",
+        "colIndex": 9,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.pnl+'%'",
+        "colIndex": 10,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      }
+    ]
+  },
+  "rowFooter": [
+    {
+      "cellTemplates": [
+        {
+          "value": "Trân trọng cảm ơn quý khách đã sử dụng dịch vụ của VNDIRECT!",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 10
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "**********",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 10
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Ghi chú: Sao kê này không thay cho các cam kết của VNDIRECT về các nghĩa vụ của khách hàng được xác nhận với bên thứ ba.",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 10
+        }
+      ]
+    }
+  ]
+}

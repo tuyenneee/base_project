@@ -1,0 +1,99 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "templateFile": "./templates/excel/fact_right_history_acc_template.xlsx",
+  "startRow": 10,
+  "rowTemplate": {
+    "object": "#root.stockResponses",
+    "cellTemplates": [
+      {
+        "value": "#root.symbol",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.rightDisplay",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.recordDate",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.executionDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.rightRatio",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.parValue",
+        "colIndex": 6
+      },
+
+      {
+        "value": "#root.rightQuantity",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.paidAmt",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.rightAmt",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.status",
+        "colIndex": 10
+      }
+    ]
+  },
+  "subStartRow" : 16,
+  "subRowTemplate": {
+    "object": "#root.bondResponses",
+    "cellTemplates": [
+      {
+        "value": "#root.symbol",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.rightDisplay",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.recordDate",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.executionDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.rightRatio",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.recordQuantity",
+        "colIndex": 6
+      },
+
+      {
+        "value": "#root.buyBackQuantity",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.convertibleBonds",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.rightAmt",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.status",
+        "colIndex": 10
+      }
+    ]
+  }
+}

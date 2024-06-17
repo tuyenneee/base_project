@@ -1,0 +1,51 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 8,
+  "templateFile": "./templates/excel/deal_bond_calendar_template.xlsx",
+  "rowTemplate": {
+    "object": "#root.dealBondResps",
+    "cellTemplates": [
+      {
+        "value": "#root.accountNo",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.bondType",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.bondCode",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.tradingDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.buyQuantity",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.buyPrice",
+        "colIndex": 6
+      },
+      {
+        "value": "#root.remainQuantity",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.leg2TradeDate",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.sellPrice",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.sellValue",
+        "colIndex": 10
+      }
+    ]
+  }
+}

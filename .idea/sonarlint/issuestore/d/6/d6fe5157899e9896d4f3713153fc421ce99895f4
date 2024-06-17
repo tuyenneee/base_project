@@ -1,0 +1,11 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(‹„ÍÚÿÿÿÿÿ8 ¸‘‘ş1
+r
+java:S1128"PRemove this unused import 'org.springframework.scheduling.annotation.Scheduled'.(‚¡®Üûÿÿÿÿ8ºĞ›¼õ1
+X
+java:S1128	";Remove this unused import 'javax.annotation.PostConstruct'.(›ÅÁ8¡¸‘‘ş1
+Z
+java:S1128
+"8Remove this unused import 'javax.annotation.PreDestroy'.(ˆÇÜÆüÿÿÿÿ8¡¸‘‘ş1
+L
+java:S1068"*Remove this unused "LOGGER" private field.(›‘à¤ÿÿÿÿÿ8¡¸‘‘ş1

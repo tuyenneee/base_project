@@ -1,0 +1,69 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 23,
+  "fontFamily": "Times New Roman",
+  "fontSize": 12,
+  "templateFile": "./templates/excel/debt_account_template.xlsx",
+  "rowTemplate": {
+    "object": "#root.debtAccountResponses",
+    "cellTemplates": [
+      {
+        "value": "#root.acctNo",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.dealId",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.productName",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.releaseDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.overdueDate",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.amount",
+        "colIndex": 6
+      },
+      {
+        "value": "#root.rate",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.paidAmount",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.remainAmount",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.paidInterestAmount",
+        "colIndex": 10
+      },
+      {
+        "value": "#root.remainInterestAmount",
+        "colIndex": 11
+      },
+      {
+        "value": "#root.totalOutstandingAmount",
+        "colIndex": 12
+      },
+      {
+        "value": "#root.promotionCode",
+        "colIndex": 13
+      },
+      {
+        "value": "#root.debtStatus",
+        "colIndex": 14
+      }
+    ]
+  }
+}

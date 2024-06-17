@@ -1,0 +1,115 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 12,
+  "templateFile": "./templates/excel/debt_statement_template.xlsx",
+  "rowTemplate": {
+    "object": "#root.debtStatements",
+    "cellTemplates": [
+      {
+        "value": "#root.date",
+        "colIndex": 1,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "CENTER"
+          }
+        }
+      },
+      {
+        "value": "#root.description",
+        "colIndex": 2,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "LEFT"
+          }
+        }
+      },
+      {
+        "value": "#root.mrCreditAmt",
+        "colIndex": 3,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.mrDebitAmt",
+        "colIndex": 4,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.intDebitAmt",
+        "colIndex": 5,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      },
+      {
+        "value": "#root.cumulativeDebt",
+        "colIndex": 6,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          }
+        }
+      }
+    ]
+  },
+
+  "subStartRow" : 16,
+  "subRowTemplate": {
+    "object": "#root.debtInterestStatements",
+    "cellTemplates": [
+      {
+        "value": "#root.releaseDate",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.dueDate",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.overdueDate",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.productName",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.remainAmount",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.rate",
+        "colIndex": 6
+      },
+
+      {
+        "value": "#root.interestAmount",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.promotionType",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.promotionCode",
+        "colIndex": 9
+      }
+    ]
+  }
+}

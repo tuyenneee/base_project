@@ -1,0 +1,184 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 9,
+  "templateFile": "./templates/excel/basic_statement_stock_template.xlsx",
+  "rowTemplate": {
+    "object": "#root.transactions",
+    "cellTemplates": [
+      {
+        "value": "#root.date",
+        "colIndex": 1,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.transactionName",
+        "colIndex": 2,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          },
+          "isWrapped": true
+        }
+      },
+      {
+        "value": "#root.description",
+        "colIndex": 3,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          },
+          "isWrapped": true
+        }
+      },
+      {
+        "value": "#root.symbol",
+        "colIndex": 4,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.creditAmtSE",
+        "colIndex": 5,
+        "displayCondition": "#root.creditAmtSE != '0'",
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.debitAmtSE",
+        "colIndex": 6,
+        "displayCondition": "#root.debitAmtSE != '0'",
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          },
+          "font": {
+            "bold": true
+          }
+        }
+      }
+    ]
+  },
+  "rowFooter": [
+    {
+      "cellTemplates": [
+        {
+          "value": "",
+          "colIndex": 1
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Trân trọng cảm ơn quý khách đã sử dụng dịch vụ của VNDIRECT!",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 6
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "**********",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 6
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Ghi chú: Sao kê này không thay cho các cam kết của VNDIRECT về các nghĩa vụ của khách hàng được xác nhận với bên thứ ba.",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 6
+        }
+      ]
+    }
+  ]
+}

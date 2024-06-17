@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-background {
+            background-color: #EF7C31;
+        }
+
+        .sub-background {
+            background-color: #F7CBAD;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .items-end {
+            align-items: flex-end;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .bg-white {
+            background-color: #fff;
+        }
+
+        .p-1 {
+            padding: 0.25rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-1 {
+            margin-top: 0.25rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .w-2-3 {
+            width: 70%;
+        }
+
+        .w-1-3 {
+            width: 30%;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .min-w-full {
+            min-width: 100%;
+        }
+
+        .my-6 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .px-10 {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .my-20 {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        .font-extrabold {
+            font-weight: 800;
+        }
+
+        .main-background {
+            background-color: #EF7C31;
+        }
+
+        .sub-background {
+            background-color: #F7CBAD;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .text-xl {
+            font-size: 32px;
+        }
+
+
+        .h-full {
+            height: 100%;
+        }
+
+        table {
+            border: 1px solid #000 !important;
+            border-collapse: collapse !important;
+        }
+
+        tr {
+            border: 1px solid #000 !important;
+        }
+
+        td {
+            border: 1px solid #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="w-full h-full flex items-center justify-center">
+    <div class="w-full bg-white p-1">
+        <!-- header -->
+
+        <div class="w-full">
+            <p class="font-bold text-xl text-center mt-1 mb-2">
+                Báo cáo tăng trưởng tài sản
+            </p>
+            <br>
+            <p class="text-center mb-2 text-sm">
+                Ngày thực hiện :
+                <span th:text="${#dates.format(#dates.createNow(), 'dd/MM/yyyy')}"></span>
+            </p>
+            <p class="text-center mb-2 text-sm">
+                Biến động tài sản từ:
+                <span th:text="${asset.fromDate}"></span> đến
+                <span th:text="${asset.toDate}"></span>
+            </p>
+        </div>
+
+        <!-- Bảng thứ nhất -->
+
+        <div class="flex w-full gap-4 ">
+            <div class="flex-1">
+                <table class="min-w-full bg-white border-gray-300 my-6">
+                    <tr>
+                        <td class="w-2-3  py-2 px-4 border border-black font-semibold">
+                            Khách hàng
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right"
+                            th:text="${asset.customerName}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-2-3 py-2 px-4 border border-black font-semibold">
+                            Số tài khoản
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.accountNo}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-2-3 py-2 px-4 border border-black font-semibold">
+                            Mã khách hàng
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right"
+                            th:text="${asset.customerId}">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="flex-1"></div>
+        </div>
+
+        <!-- Bảng số 2 -->
+
+        <div class="flex w-full gap-4 mt-2 mb-6">
+            <div class="flex-1">
+                <p class="font-semibold mb-2">Thông tin tổng hợp</p>
+                <table class="min-w-full h-full bg-white border border-gray-300">
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-4  border border-black font-semibold main-background text-white text-left">
+                            Giá trị tài sản ròng đầu kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.openNAV}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left ">
+                            Tổng tiền tăng trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.ciInward}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left">
+                            Tổng tiền giảm trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.ciOutward}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left">
+                            Tổng giá trị chứng khoán tăng trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.seInward}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left">
+                            Tổng giá trị chứng khoán giảm trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.seOutward}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left">
+                            Tổng giá trị chứng khoán quyền tăng trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right"
+                            th:text="${asset.rightInward}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left">
+                            Tổng giá trị chứng khoán quyền giảm trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right"
+                            th:text="${asset.rightOutward}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-10 border border-black font-semibold sub-background text-white text-left">
+                            Tăng trưởng tài sản trong kỳ (%)
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right"
+                            th:text="${asset.growthPeriod}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-4  border border-black font-semibold main-background text-white text-left">
+                            Giá trị tài sản ròng cuối kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right"
+                            th:text="${asset.closingNAV}">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                                class="w-2-3 py-2 px-4  border border-black font-semibold main-background text-white text-left">
+                            Tăng trưởng tài sản ròng trong kỳ
+                        </td>
+                        <td class="w-1-3 py-2 px-4 border border-black text-right" th:text="${asset.pnl}">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="flex-1">
+                <p class="font-semibold mb-2">Biểu đồ</p>
+                <div class="w-full h-full flex justify-start items-end border-gray-300">
+                    <div class="w-full h-full">
+                        <img th:src="'data:image/png;base64,' + ${asset.filePath}" alt="Red dot"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="my-20">
+            <p class="font-extrabold text-center">*****************</p>
+            <p class="font-semibold text-center">
+                Trân trọng cảm ơn quý khách đã sử dụng dịch vụ của VNDIRECT!
+            </p>
+            <p class="font-semibold text-center">
+                Ghi chú: sao kê này không thay cho các cam kết của VNDIRECT về các
+                nghĩa vụ khách hàng được xác nhận với bên thứ ba.
+            </p>
+            <p class="font-extrabold text-center">*****************</p>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

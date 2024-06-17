@@ -1,0 +1,326 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 10,
+  "templateFile": "./templates/excel/transaction_template.xlsx",
+  "rowTemplate": {
+    "object": "#root.transactions",
+    "cellTemplates": [
+      {
+        "value": "#root.date",
+        "colIndex": 1,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.txNum",
+        "colIndex": 2,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.transactionName",
+        "colIndex": 3,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.description",
+        "colIndex": 4,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          },
+          "isWrapped" : true
+        }
+      },
+      {
+        "value": "#root.creditAmtCI",
+        "colIndex": 5,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.debitAmtCI",
+        "colIndex": 6,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.cumulativeCIBalance",
+        "colIndex": 7,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top" : "THIN",
+            "left" : "THIN",
+            "bottom" : "THIN",
+            "right" : "THIN"
+          }
+        }
+      }
+    ]
+  },
+  "rowFooter": [
+    {
+      "object": "Cộng phát sinh trong kỳ",
+      "cellTemplates": [
+        {
+          "value": "",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "THIN",
+              "bottom" : "THIN",
+              "right" : "NONE"
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 2,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "NONE",
+              "bottom" : "THIN",
+              "right" : "NONE"
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 3,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "NONE",
+              "bottom" : "THIN",
+              "right" : "NONE"
+            }
+          }
+        },
+        {
+          "value": "Cộng phát sinh trong kỳ",
+          "colIndex": 4,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "NONE",
+              "bottom" : "THIN",
+              "right" : "THIN"
+            },
+            "font": {
+              "bold": true
+            }
+          }
+        },
+        {
+          "value": "#root.totalCumulativeCredit",
+          "colIndex": 5,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "THIN",
+              "bottom" : "THIN",
+              "right" : "THIN"
+            }
+          }
+        },
+        {
+          "value": "#root.totalCumulativeDebit",
+          "colIndex": 6,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "THIN",
+              "bottom" : "THIN",
+              "right" : "THIN"
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 7,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top" : "THIN",
+              "left" : "THIN",
+              "bottom" : "THIN",
+              "right" : "THIN"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 7
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Trân trọng cảm ơn quý khách đã sử dụng dịch vụ của VNDIRECT!",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 7
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "**********",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 7
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Ghi chú: Sao kê này không thay cho các cam kết của VNDIRECT về các nghĩa vụ của khách hàng được xác nhận với bên thứ ba.",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 7
+        }
+      ]
+    }
+  ]
+}

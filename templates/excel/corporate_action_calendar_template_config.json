@@ -1,0 +1,55 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 8,
+  "templateFile": "./templates/excel/corporate_action_calendar_template.xlsx",
+  "rowTemplate": {
+    "object": "#root.rightResponses",
+    "cellTemplates": [
+      {
+        "value": "#root.acctNo",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.symbol",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.rightDisplay",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.recordDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.executionDate",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.rightRatio",
+        "colIndex": 6
+      },
+      {
+        "value": "#root.expirationDate",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.rightPrice",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.recordQuantity",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.rightQuantity",
+        "colIndex": 10
+      },
+      {
+        "value": "#root.rightValue",
+        "colIndex": 11
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "templateFile": "./templates/excel/fact_right_cust_template.xlsx",
+  "startRow": 10,
+  "rowTemplate": {
+    "object": "#root.stockResponses",
+    "cellTemplates": [
+      {
+        "value": "#root.acctNo",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.symbol",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.rightDisplay",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.recordDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.executionDate",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.expirationDate",
+        "colIndex": 6
+      },
+
+      {
+        "value": "#root.toDateTransfer",
+        "colIndex": 7
+      },
+      {
+        "value": "#root.rightRatio",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.recordQuantity",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.rightQuantity",
+        "colIndex": 10
+      },
+      {
+        "value": "#root.rightAmt",
+        "colIndex": 11
+      },
+      {
+        "value": "#root.taxAmt",
+        "colIndex": 12
+      },
+      {
+        "value": "#root.status",
+        "colIndex": 13
+      }
+    ]
+  },
+  "subStartRow" : 16,
+  "subRowTemplate": {
+    "object": "#root.bondResponses",
+    "cellTemplates": [
+      {
+        "value": "#root.acctNo",
+        "colIndex": 1
+      },
+      {
+        "value": "#root.symbol",
+        "colIndex": 2
+      },
+      {
+        "value": "#root.rightDisplay",
+        "colIndex": 3
+      },
+      {
+        "value": "#root.recordDate",
+        "colIndex": 4
+      },
+      {
+        "value": "#root.executionDate",
+        "colIndex": 5
+      },
+      {
+        "value": "#root.rightRatio",
+        "colIndex": 6
+      },
+      {
+        "value": "#root.recordQuantity",
+        "colIndex": 7
+      },
+
+      {
+        "value": "#root.buyBackQuantity",
+        "colIndex": 8
+      },
+      {
+        "value": "#root.convertibleBonds",
+        "colIndex": 9
+      },
+      {
+        "value": "#root.rightAmt",
+        "colIndex": 10
+      },
+      {
+        "value": "#root.status",
+        "colIndex": 11
+      }
+    ]
+  }
+}

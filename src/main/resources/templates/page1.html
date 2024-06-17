@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Temple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        letter-spacing: 0.1px;
+      }
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 10mm auto;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        background-repeat: no-repeat;
+        background-size: auto 115%;
+        background-image: url("https://s3-alpha-sig.figma.com/img/5036/e849/06af5cf3f01d06d4bb39f3aaa9281606?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OEiy~29PL3-jVN8CsaXVjwnOf~Cwtc3GFCuWffewTOJChhv5Ycuoj--mMZ57FZEk-9wGk-yc06XBI4h36cxfVN-FbklhygSjARU6MLpqvB2E5QD63ElT9JzDh3p4KGNQB~nGJNAaGO0h0hxu~p1UYM46fK67LiHivZ4qqDZ6xu-PuxiBmRdPqYpgwlk1pGFNAZlQTt8ECzgVPEqWYj20SROQ4dRYmvmHYWbLl75dGkJhqjJxg1cM7kbfniFdP1xb5Du6DEe-c3qiuNAiTuS3oP85aNW-1gQk-8q3v6Jv80dbOPlsZSR8KyxKqFdQoGdIT-7-IDUQgY0RQY308WOoWQ__");
+        background-position: center;
+      }
+      .main {
+        padding-top: 10mm;
+        padding-left: 14mm;
+        padding-right: 14mm;
+        padding-bottom: 10mm;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        html,
+        body {
+          width: 210mm;
+          height: 297mm;
+        }
+
+        .page {
+          margin: 0;
+          border: initial;
+          border-radius: initial;
+          width: initial;
+          min-height: initial;
+          box-shadow: initial;
+          page-break-after: always;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="main">
+        <!-- HEAD -->
+        <div style="text-align: justify">
+          <img
+            style="width: 25%"
+            src="data:image/png;base64,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"
+          />
+          <div
+            style="
+              font-size: 16px;
+              text-align: end;
+              float: right;
+              color: #ee8022;
+              line-height: 16px;
+              margin-top: 10px;
+              font-family: 'Inter';
+            "
+          >
+            <b
+              style="
+                display: block;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: right;
+                margin-bottom: 4px;
+              "
+              >Phụ lục 1b</b
+            >
+            <b
+              style="
+                display: block;
+                font-weight: 700;
+                text-transform: uppercase;
+              "
+              >MẪU HỢP ĐỒNG ĐẠI LÝ CÁ NHÂN</b
+            >
+          </div>
+        </div>
+        <!-- BODY -->
+        <div
+          style="
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 20px;
+            text-align: center;
+            font-family: SVN-Gilroy;
+          "
+        >
+          <p style="text-transform: uppercase">
+            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+          </p>
+          <p>Độc lập – Tự do – Hạnh phúc</p>
+          <p>Số: ...</p>
+        </div>
+        <div
+          style="
+            font-weight: 500;
+            margin-top: 6px;
+            font-size: 16px;
+            font-family: SVN-Gilroy;
+          "
+        >
+          <p>Căn cứ:</p>
+          <div style="margin-left: 8px; margin-top: 4px">
+            &#x2022; Luật kinh doanh bảo hiểm hiện hành và các văn bản hướng dẫn
+            thi hành;
+          </div>
+          <div style="margin-left: 8px; margin-top: 4px">
+            &#x2022; Nhu cầu, khả năng của Hai Bên trong hoạt động đại lý bảo
+            hiểm.
+          </div>
+          <p style="margin-top: 6px; margin-bottom: 6px">
+            Hôm nay, ngày      tháng      năm 202…, tại Hà Nội, chúng tôi gồm:
+          </p>
+        </div>
+        <div style="font-family: SVN-Gilroy; font-size: 16px">
+          <table style="border-spacing: 0 4px; border-collapse: separate">
+            <tr>
+              <td style="width: 15%; font-weight: 800">Bên A</td>
+              <td style="width: 85%; font-weight: 800">
+                : TỔNG CÔNG TY CỔ PHẦN BẢO HIỂM BƯU ĐIỆN (PTI)
+              </td>
+            </tr>
+
+            <tr>
+              <td>Địa chỉ</td>
+              <td>
+                : Số 95 phố Trần Thái Tông, phường Dịch Vọng , quận Cầu Giấy,
+                TP. Hà Nội
+              </td>
+            </tr>
+            <tr>
+              <td>Điện thoại</td>
+              <td>: 024 7300 5678</td>
+            </tr>
+            <tr>
+              <td>Mã số thuế</td>
+              <td>: 0100774631</td>
+            </tr>
+            <tr>
+              <td>Số tài khoản</td>
+              <td>: 01118010000031</td>
+            </tr>
+            <tr>
+              <td>Tại</td>
+              <td>: TMCP Hàng Hải Việt Nam (MSB)</td>
+            </tr>
+            <tr>
+              <td>Đại diện</td>
+              <td>
+                <p>
+                  : Bà Nguyễn Thị Ngọc Khuê
+                  <span style="margin-left: 60px"
+                    >Chức vụ: Giám Đốc Quản Trị Vận Hành</span
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+          <p>
+            Theo giấy ủy quyền số &emsp; &emsp; &emsp; &emsp; Ngày &emsp;tháng
+            &emsp; năm 2024 của Tổng Giám đốc Tổng Công ty Cổ phần Bảo hiểm Bưu
+            điện.
+          </p>
+          <p style="font-weight: 800; margin-top: 4px">
+            (Sau đây gọi tắt là Bên A, PTI hoặc Doanh nghiệp bảo hiểm)
+          </p>
+        </div>
+        <div style="font-family: SVN-Gilroy; font-size: 16px">
+          <table style="border-spacing: 0 4px; border-collapse: separate">
+            <tr>
+              <td style="width: 17.7%; font-weight: 800">Bên B</td>
+              <td style="width: 70%; font-weight: 800">: (Tên đại lý)</td>
+            </tr>
+            <tr>
+              <td style="width: 15%">Địa chỉ</td>
+              <td style="width: 85%">:</td>
+            </tr>
+            <tr>
+              <td>CCCD</td>
+              <td>
+                : <span style="margin-left: 180px">Ngày cấp:</span>
+                <span style="margin-left: 120px">Nơi cấp:</span>
+              </td>
+            </tr>
+          </table>
+          <p>
+            Chứng chỉ đại lý số:
+            <span style="margin-left: 135px">Ngày cấp:</span>
+          </p>
+        </div>
+        <div style="font-family: SVN-Gilroy; font-size: 16px">
+          <table style="border-spacing: 0 4px; border-collapse: separate">
+            <tr>
+              <td style="width: 15%">Điện thoại</td>
+              <td style="width: 85%">:</td>
+            </tr>
+            <tr>
+              <td style="width: 15%">MST cá nhân</td>
+              <td style="width: 85%">:</td>
+            </tr>
+          </table>
+        </div>
+        <div style="font-family: SVN-Gilroy; font-size: 16px">
+          <p>(Sau đây gọi tắt là Bên B, hoặc Đại lý)</p>
+          <p style="margin-top: 4px">
+            Hai Bên thống nhất ký kết và thực hiện Hợp đồng đại lý bảo hiểm phi
+            nhân thọ với các điều khoản dưới đây:
+          </p>
+        </div>
+        <div
+          style="font-family: SVN-Gilroy; font-size: 16px; line-height: 22px"
+        >
+          <p style="font-weight: 800; margin-top: 4px">
+            Điều 1. Nội dung và phạm vi hoạt động đại lý
+          </p>
+          <p style="font-weight: 800">1.1&emsp;Nội dung hoạt động:</p>
+          <p>
+            Bằng Hợp đồng này, Bên A ủy quyền cho Bên B thực hiện các hoạt động
+            đại lý bảo hiểm với phạm vi công việc như sau:
+          </p>
+          <div>
+            <span style="margin-left: 8px">&#x2022;</span>
+            Tư vấn sản phẩm bảo hiểm;
+          </div>
+          <div>
+            <span style="margin-left: 8px">&#x2022;</span>
+            Giới thiệu, chào bán các sản phẩm bảo hiểm của Bên A;
+          </div>
+          <div>
+            <span style="margin-left: 8px">&#x2022;</span>
+            Thu xếp việc giao kết hợp đồng bảo hiểm;
+          </div>
+          <div>
+            <span style="margin-left: 8px">&#x2022;</span>
+            <span
+              >Thu phí bảo hiểm ngay khi cấp giấy chứng nhận bảo hiểm cho khách
+              hàng. Bên B không
+              <span style="margin-left: 18px"
+                >được phép cho khách hàng nợ phí bảo hiểm trừ trường hợp được
+                Bên A đồng ý và được</span
+              >
+              <span style="margin-left: 18px"
+                >thỏa thuận bằng hợp đồng bảo hiểm giữa bên A và khách
+                hàng;</span
+              ></span
+            >
+          </div>
+          <div>
+            <span style="margin-left: 8px">&#x2022;</span>
+            Thu thập hồ sơ để phục vụ việc giải quyết bồi thường, trả tiền bảo
+            hiểm.
+          </div>
+        </div>
+
+        <!-- END -->
+      </div>
+
+      <div
+        style="
+          border: none;
+          width: 20px;
+          text-align: center;
+          background-color: #ee8022;
+          color: white;
+          float: right;
+          margin-right: 12mm;
+          font-weight: 500;
+        "
+      >
+        1
+      </div>
+      <div
+        style="
+          height: 12px;
+          background-color: #0e4e92;
+          width: 210mm;
+          margin-top: 3.6rem;
+        "
+      ></div>
+    </div>
+  </body>
+</html>

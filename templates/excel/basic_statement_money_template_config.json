@@ -1,0 +1,454 @@
+{
+  "fileName": "test",
+  "sheetName": "test",
+  "startRow": 9,
+  "templateFile": "./templates/excel/basic_statement_money_template.xlsx",
+  "rowHeader": {
+    "object": "Sao kê tài khoản giao dịch chứng khoán",
+    "cellTemplates": [
+      {
+        "value": "",
+        "colIndex": 1,
+        "cellStyle": {
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "",
+        "colIndex": 2,
+        "cellStyle": {
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "Số dư đầu kỳ:",
+        "colIndex": 3,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          },
+          "font": {
+            "bold": true
+          }
+        }
+      },
+      {
+        "value": "",
+        "colIndex": 4,
+        "cellStyle": {
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "",
+        "colIndex": 5,
+        "cellStyle": {
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.sopCIBalance",
+        "colIndex": 6,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      }
+    ]
+  },
+  "rowTemplate": {
+    "object": "#root.transactions",
+    "cellTemplates": [
+      {
+        "value": "#root.date",
+        "colIndex": 1,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.transactionName",
+        "colIndex": 2,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          },
+          "isWrapped": true
+        }
+      },
+      {
+        "value": "#root.description",
+        "colIndex": 3,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "GENERAL"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          },
+          "isWrapped": true
+        }
+      },
+      {
+        "value": "#root.creditAmtCI",
+        "colIndex": 4,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.debitAmtCI",
+        "colIndex": 5,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      },
+      {
+        "value": "#root.cumulativeCIBalance",
+        "colIndex": 6,
+        "cellStyle": {
+          "alignment": {
+            "vertical": "CENTER",
+            "horizontal": "RIGHT"
+          },
+          "border": {
+            "top": "THIN",
+            "left": "THIN",
+            "bottom": "THIN",
+            "right": "THIN"
+          }
+        }
+      }
+    ]
+  },
+  "rowFooter": [
+    {
+      "cellTemplates": [
+        {
+          "value": "",
+          "colIndex": 1,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 2,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        },
+        {
+          "value": "Cộng phát sinh trong kỳ:",
+          "colIndex": 3,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            },
+            "font": {
+              "bold": true
+            }
+          }
+        },
+        {
+          "value": "#root.totalCumulativeCredit",
+          "colIndex": 4,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            },
+            "font": {
+              "bold": true
+            }
+          }
+        },
+        {
+          "value": "#root.totalCumulativeDebit",
+          "colIndex": 5,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            },
+            "font": {
+              "bold": true
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 6,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "",
+          "colIndex": 1,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 2,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        },
+        {
+          "value": "Số dư cuối kỳ:",
+          "colIndex": 3,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            },
+            "font": {
+              "bold": true
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 4,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        },
+        {
+          "value": "",
+          "colIndex": 5,
+          "cellStyle": {
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            }
+          }
+        },
+        {
+          "value": "#root.eopCIBalance",
+          "colIndex": 6,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "RIGHT"
+            },
+            "border": {
+              "top": "THIN",
+              "left": "THIN",
+              "bottom": "THIN",
+              "right": "THIN"
+            },
+            "font": {
+              "bold": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "",
+          "colIndex": 1
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Trân trọng cảm ơn quý khách đã sử dụng dịch vụ của VNDIRECT!",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 6
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "**********",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 6
+        }
+      ]
+    },
+    {
+      "cellTemplates": [
+        {
+          "value": "Ghi chú: Sao kê này không thay cho các cam kết của VNDIRECT về các nghĩa vụ của khách hàng được xác nhận với bên thứ ba.",
+          "colIndex": 1,
+          "cellStyle": {
+            "alignment": {
+              "vertical": "CENTER",
+              "horizontal": "CENTER"
+            }
+          }
+        }
+      ],
+      "mergeCells": [
+        {
+          "fromColIndex": 1,
+          "toColIndex": 6
+        }
+      ]
+    }
+  ]
+}

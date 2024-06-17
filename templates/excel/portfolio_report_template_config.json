@@ -1,0 +1,348 @@
+[
+  {
+    "fileName": "test",
+    "sheetName": "test",
+    "startRow": 8,
+    "templateFile": "./templates/excel/portfolio_report_template.xlsx",
+    "rowTemplate": {
+      "object": "#root.stockPortfolios",
+      "cellTemplates": [
+        {
+          "value": "#root.acctNo",
+          "colIndex": 1
+        },
+        {
+          "value": "#root.assetCode",
+          "colIndex": 2
+        },
+        {
+          "value": "#root.tradingQuantity",
+          "colIndex": 3
+        },
+        {
+          "value": "#root.blockedQuantity",
+          "colIndex": 4
+        },
+        {
+          "value": "#root.receivingQuantity",
+          "colIndex": 5
+        },
+        {
+          "value": "#root.pendingQuantity",
+          "colIndex": 6
+        },
+        {
+          "value": "#root.transferQuantity",
+          "colIndex": 7
+        },
+        {
+          "value": "#root.total",
+          "colIndex": 8
+        },
+        {
+          "value": "#root.marketPrice",
+          "colIndex": 9
+        },
+        {
+          "value": "#root.marketValue",
+          "colIndex": 10
+        },
+        {
+          "value": "#root.costPrice",
+          "colIndex": 11
+        },
+        {
+          "value": "#root.pnl",
+          "colIndex": 12
+        },
+        {
+          "value": "#root.pnlPercent",
+          "colIndex": 13
+        },
+        {
+          "value": "#root.avgPrice",
+          "colIndex": 14
+        },
+        {
+          "value": "#root.pnlByAvg",
+          "colIndex": 15
+        }
+      ]
+    }
+  },
+  {
+    "fileName": "test",
+    "sheetName": "test",
+    "startRow": 8,
+    "templateFile": "./templates/excel/corporate_action_calendar_template_list.xlsx",
+    "rowTemplate": {
+      "object": "#root.ccqResponses",
+      "cellTemplates": [
+        {
+          "value": "#root.acctNo",
+          "colIndex": 1
+        },
+        {
+          "value": "#root.assetCode",
+          "colIndex": 2
+        },
+        {
+          "value": "#root.tradingQuantity",
+          "colIndex": 3
+        },
+        {
+          "value": "#root.blockedQuantity",
+          "colIndex": 4
+        },
+        {
+          "value": "#root.receivingQuantity",
+          "colIndex": 5
+        },
+        {
+          "value": "#root.pendingQuantity",
+          "colIndex": 6
+        },
+        {
+          "value": "#root.transferQuantity",
+          "colIndex": 7
+        },
+        {
+          "value": "#root.total",
+          "colIndex": 8
+        },
+        {
+          "value": "#root.marketPrice",
+          "colIndex": 9
+        },
+        {
+          "value": "#root.marketValue",
+          "colIndex": 10
+        },
+        {
+          "value": "#root.costPrice",
+          "colIndex": 11
+        },
+        {
+          "value": "#root.pnl",
+          "colIndex": 12
+        },
+        {
+          "value": "#root.pnlPercent",
+          "colIndex": 13
+        },
+        {
+          "value": "#root.avgPrice",
+          "colIndex": 14
+        },
+        {
+          "value": "#root.pnlByAvg",
+          "colIndex": 15
+        }
+      ]
+    }
+  },
+  {
+    "fileName": "test",
+    "sheetName": "test",
+    "startRow": 8,
+    "templateFile": "./templates/excel/portfolio_report_template.xlsx",
+    "rowTemplate": {
+      "object": "#root.coveredWarrentResponses",
+      "cellTemplates": [
+        {
+          "value": "#root.acctNo",
+          "colIndex": 1
+        },
+        {
+          "value": "#root.assetCode",
+          "colIndex": 2
+        },
+        {
+          "value": "#root.tradingQuantity",
+          "colIndex": 3
+        },
+        {
+          "value": "#root.blockedQuantity",
+          "colIndex": 4
+        },
+        {
+          "value": "#root.receivingQuantity",
+          "colIndex": 5
+        },
+        {
+          "value": "#root.pendingQuantity",
+          "colIndex": 6
+        },
+        {
+          "value": "#root.transferQuantity",
+          "colIndex": 7
+        },
+        {
+          "value": "#root.total",
+          "colIndex": 8
+        },
+        {
+          "value": "#root.marketPrice",
+          "colIndex": 9
+        },
+        {
+          "value": "#root.marketValue",
+          "colIndex": 10
+        },
+        {
+          "value": "#root.costPrice",
+          "colIndex": 11
+        },
+        {
+          "value": "#root.pnl",
+          "colIndex": 12
+        },
+        {
+          "value": "#root.pnlPercent",
+          "colIndex": 13
+        },
+        {
+          "value": "#root.avgPrice",
+          "colIndex": 14
+        },
+        {
+          "value": "#root.pnlByAvg",
+          "colIndex": 15
+        }
+      ]
+    }
+  },
+  {
+    "fileName": "test",
+    "sheetName": "test",
+    "startRow": 8,
+    "templateFile": "./templates/excel/portfolio_report_template.xlsx",
+    "rowTemplate": {
+      "object": "#root.bondResponses",
+      "cellTemplates": [
+        {
+          "value": "#root.acctNo",
+          "colIndex": 1
+        },
+        {
+          "value": "#root.assetCode",
+          "colIndex": 2
+        },
+        {
+          "value": "#root.tradingQuantity",
+          "colIndex": 3
+        },
+        {
+          "value": "#root.blockedQuantity",
+          "colIndex": 4
+        },
+        {
+          "value": "#root.receivingQuantity",
+          "colIndex": 5
+        },
+        {
+          "value": "#root.transferQuantity",
+          "colIndex": 6
+        },
+        {
+          "value": "#root.quantity",
+          "colIndex": 7
+        },
+        {
+          "value": "#root.marketPrice",
+          "colIndex": 8
+        },
+        {
+          "value": "#root.value",
+          "colIndex": 9
+        }
+      ]
+    }
+  },
+  {
+    "fileName": "test",
+    "sheetName": "test",
+    "startRow": 8,
+    "templateFile": "./templates/excel/portfolio_report_template.xlsx",
+    "rowTemplate": {
+      "object": "#root.derivativeResponses",
+      "cellTemplates": [
+        {
+          "value": "#root.acctNo",
+          "colIndex": 1
+        },
+        {
+          "value": "#root.assetCode",
+          "colIndex": 2
+        },
+        {
+          "value": "#root.longQuantity",
+          "colIndex": 3
+        },
+        {
+          "value": "#root.shortQuantity",
+          "colIndex": 4
+        },
+        {
+          "value": "#root.averagePrice",
+          "colIndex": 5
+        },
+        {
+          "value": "#root.marketPrice",
+          "colIndex": 6
+        },
+        {
+          "value": "#root.pnl",
+          "colIndex": 7
+        },
+        {
+          "value": "#root.pnlPercent",
+          "colIndex": 8
+        }
+      ]
+    }
+  },
+  {
+    "fileName": "test",
+    "sheetName": "test",
+    "startRow": 8,
+    "templateFile": "./templates/excel/portfolio_report_template.xlsx",
+    "rowTemplate": {
+      "object": "#root.termDepositResponses",
+      "cellTemplates": [
+        {
+          "value": "#root.acctNo",
+          "colIndex": 1
+        },
+        {
+          "value": "#root.originalAmt",
+          "colIndex": 2
+        },
+        {
+          "value": "#root.term",
+          "colIndex": 3
+        },
+        {
+          "value": "#root.depositDate",
+          "colIndex": 4
+        },
+        {
+          "value": "#root.maturityDate",
+          "colIndex": 5
+        },
+        {
+          "value": "#root.rate",
+          "colIndex": 6
+        },
+        {
+          "value": "#root.heldToMaturityAmt",
+          "colIndex": 7
+        },
+        {
+          "value": "#root.currentAmt",
+          "colIndex": 8
+        }
+      ]
+    }
+  }
+]
